@@ -4,13 +4,13 @@
     width: 50%;
     margin: 0 auto;
     .product_card {
-      width: 850px;
-      height: 850px;
+      width: 400px;
+      height: 300px;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      border: 5px rgb(50, 108, 196) solid;
+      border: 1px rgb(50, 108, 196) solid;
       &:hover{
         background-color: rgb(118, 169, 226);
         border-radius: 100px;
@@ -21,12 +21,6 @@
         color: red;
         font-weight: bolder;
         font-size: 35px;
-      }
-      .product_img {
-        img {
-          width: 700px;
-          height: 700px;
-        }
       }
     }
   }

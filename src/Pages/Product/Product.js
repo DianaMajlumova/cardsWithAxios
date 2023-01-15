@@ -18,10 +18,7 @@ function Product() {
       <div className="main_product_div">
         <div className="product_div">
           <div className="product_card">
-            <div className="product_img">
-              <img src={post.image}></img>
-            </div>
-            <h4>{post.price}$</h4>
+            <h4>name</h4>
           </div>
         </div>
       </div>

@@ -7,7 +7,7 @@ function Home() {
   const [post, setPost] = useState([]);
 
   useEffect(() => {
-    axios.get("https://fakestoreapi.com/products").then((response) => {
+    axios.get("https://northwind.vercel.app/api/products ").then((response) => {
       setPost(response.data);
     });
   }, []);
@@ -20,11 +20,9 @@ function Home() {
             {post.map((element) => {
               return (
                 <div key={element.id} className="cardBox">
-                  <div className="cardImg">
-                    <img src={element.image} />
-                  </div>
-                  <h4>{element.title}</h4>
-                  <p>{element.price} $</p>
+                  <p>{element.discontinued}</p>
+                  <h2>{element.name}</h2>
+                  <h3>{element.quantityPerUnit}</h3>
                   <Link to={`product/${element.id}`}><button>Learn more</button></Link>
                 </div>
               );
